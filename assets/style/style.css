@@ -11,3 +11,19 @@
 .clocksize {
     font-size: 120pt;
 }
+
+.inputzone {
+    border: none;
+    border-bottom: 3px solid #ffffff;
+    padding: 5px 10px;
+    outline: none;
+    background-color: transparent;
+    color: #ffffff;
+    min-width: 25vw
+}
+
+.glassy {
+    box-shadow: 0 0 5px 0;
+    background: inherit;
+    backdrop-filter: blur(10px);
+}
