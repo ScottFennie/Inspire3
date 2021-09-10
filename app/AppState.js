@@ -5,7 +5,7 @@ class AppState extends EventEmitter {
     /** @type {import('./Models/Value').Value[]} */
     values = []
 
-    bgimage = ""
+    bgimages = ""
 }
 
 export const ProxyState = new Proxy(new AppState(), {

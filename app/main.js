@@ -1,7 +1,10 @@
-import { ValuesController } from "./Controllers/ValuesController.js";
+import { BackgroundImageController } from "./Controllers/BackgroundImageController.js";
+
 
 class App {
-  valuesController = new ValuesController();
+
+
+    backgroundImageController = new BackgroundImageController();
 }
 
 window["app"] = new App();
