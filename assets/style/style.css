@@ -23,7 +23,15 @@
 }
 
 .glassy {
-    box-shadow: 0 0 5px 0;
+    /* box-shadow: 0 0 3px 0; */
     background: inherit;
     backdrop-filter: blur(10px);
+    color: #ffffff;
+}
+
+.glassy2 {
+    box-shadow: 0 0 1px 0;
+    background: inherit;
+    /* backdrop-filter: blur(10px); */
+    color: #ffffff;
 }
