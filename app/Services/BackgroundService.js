@@ -18,8 +18,6 @@ class BackgroundService {
 
         ProxyState.bgimages = res.data.largeImgUrl
 
-        console.log("heres all the bg images", ProxyState.bgimages)
-
     }
 
 

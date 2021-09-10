@@ -4,7 +4,6 @@ import { backgroundService } from "../Services/backgroundService.js";
 function _drawBgImage() {
     document.getElementById("bgImage").style.backgroundImage = `url(${ProxyState.bgimages})`
 
-    console.log("this is ur bg image currently", ProxyState.bgimages)
 
 }
 
