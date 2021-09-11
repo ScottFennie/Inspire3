@@ -22,6 +22,16 @@
     min-width: 25vw
 }
 
+.inputzone2 {
+    border: none;
+    border-bottom: 3px solid #ffffff;
+    padding: 5px 10px;
+    outline: none;
+    background-color: transparent;
+    color: #ffffff;
+    min-width: 10vw
+}
+
 .glassy {
     /* box-shadow: 0 0 3px 0; */
     background: inherit;
