@@ -21,12 +21,16 @@ class UserService {
     async createATodo(newTodo) {
 
         const newtodoitem = new TodoItem(newTodo)
-
         let res = await todoApi.post(`${ProxyState.currentuser}/todos`, newtodoitem)
         ProxyState.todos = [...ProxyState.todos, new TodoItem(res.data)]
 
         console.log("newTodo Data", res)
 
+    }
+    async getTodos() {
+        let res = await todoApi.get(`${ProxyState.currentuser}/todos`)
+        ProxyState.todos = res.data.map(t => new TodoItem(t))
+        console.log("not idiot", ProxyState.todos)
     }
 }
 

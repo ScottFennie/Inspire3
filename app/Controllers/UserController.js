@@ -32,12 +32,15 @@ function _drawTodo() {
     document.getElementById("todo").innerHTML = template
 }
 
+
+
 export class UserController {
 
     constructor() {
         _drawUserInput()
         ProxyState.on('currentuser', _drawUserInput)
         ProxyState.on('todos', _drawTodo)
+
     }
 
     createAUser() {
@@ -48,7 +51,10 @@ export class UserController {
         let newUser = form.name.value
 
         userService.createAUser(newUser)
+        userService.getTodos()
         form.reset()
+
+
 
     }
 
@@ -66,4 +72,5 @@ export class UserController {
         form.reset()
 
     }
+
 }
