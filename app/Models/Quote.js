@@ -7,7 +7,7 @@ export class Quote {
     get Template() {
 
         return /*html*/ `
-        <p class="pt-4">"${this.content}"</p>
+        <p class="pt-4 myclass">"${this.content}"</p>
         <h6 class="hide">-${this.author}</h6>
         `
     }
