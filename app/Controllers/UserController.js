@@ -52,7 +52,7 @@ export class UserController {
 
     }
 
-    createTodo() {
+    async createTodo() {
 
         event.preventDefault()
 
@@ -62,7 +62,7 @@ export class UserController {
             description: form.description.value
         }
 
-        userService.createATodo(todo)
+        await userService.createATodo(todo)
         form.reset()
 
     }
