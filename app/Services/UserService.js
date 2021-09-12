@@ -40,7 +40,16 @@ class UserService {
         curtodo.completed = !curtodo.completed
         await todoApi.put(`${ProxyState.currentuser}/todos/${todoId}`, curtodo)
 
-        console.log("its clicked")
+
+    }
+    async deleteTodo(todoId) {
+
+
+
+        await todoApi.delete(`${ProxyState.currentuser}/todos/${todoId}`)
+
+        ProxyState.todos = ProxyState.todos.filter(t => t.id !== todoId)
+
 
     }
 }

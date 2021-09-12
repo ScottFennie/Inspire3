@@ -57,8 +57,18 @@
 .tdsize {
     width: 16rem;
     min-height: 12rem;
+    max-height: 12rem;
+}
+
+.tdsize2 {
+    max-height: 10rem;
+    overflow: auto;
 }
 
 .hidden {
     visibility: hidden;
+}
+
+.hide-bar::-webkit-scrollbar {
+    display: none;
 }
