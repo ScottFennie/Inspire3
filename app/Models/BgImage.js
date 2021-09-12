@@ -7,7 +7,7 @@ export class BgImage {
     get Template() {
 
         return /*html*/ `
-        <p class = "ps-1 text-white text-center" >${this.tags}</p>
+        <p class = "ps-5 text-white text-center" >${this.tags}</p>
         `
     }
 }
