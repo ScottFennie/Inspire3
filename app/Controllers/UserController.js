@@ -14,11 +14,14 @@ function _drawUserInput() {
         `
 
         document.getElementById("hid").classList.add("hidden")
+        document.getElementById("intro").innerText = "What's Your Name?"
     } else {
 
         document.getElementById("namezone").innerHTML = /*html*/ `
         <h2>&nbsp${ProxyState.currentuser}</h2>`
+
         document.getElementById("hid").classList.remove("hidden")
+        document.getElementById("intro").innerText = "Good day,"
     }
 }
 
