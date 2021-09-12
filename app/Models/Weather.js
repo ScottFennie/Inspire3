@@ -4,7 +4,7 @@ export class Weather {
         this.icon = weatherData.weather.icon
         this.base = weatherData.base
         this.temp = weatherData.main.temp
-        this.type = weatherData.type || 0
+        this.type = weatherData.type || false
         this.name = weatherData.name
         this.main = weatherData.weather.main
 
@@ -13,7 +13,7 @@ export class Weather {
     get Template() {
 
         return /*html*/ `
-        <h3 class="pt-3">${this.temp}</h3>
+        <h3 class="pt-3 selectable" onclick="app.weatherController.tempConvert()">${this.temp}</h3>
         <h6>${this.name}</h6>
         `
     }

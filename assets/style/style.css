@@ -45,3 +45,11 @@
     /* backdrop-filter: blur(10px); */
     color: #ffffff;
 }
+
+.hide {
+    display: none;
+}
+
+.myclass:hover+.hide {
+    display: block;
+}
