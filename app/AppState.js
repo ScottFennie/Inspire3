@@ -10,6 +10,8 @@ class AppState extends EventEmitter {
     weather = []
 
     quote = []
+
+    currentuser = ""
 }
 
 export const ProxyState = new Proxy(new AppState(), {

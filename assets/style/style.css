@@ -29,7 +29,7 @@
     outline: none;
     background-color: transparent;
     color: #ffffff;
-    min-width: 10vw
+    max-width: 10vw
 }
 
 .glassy {
