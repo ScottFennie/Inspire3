@@ -53,3 +53,8 @@
 .myclass:hover+.hide {
     display: block;
 }
+
+.tdsize {
+    width: 16rem;
+    min-height: 12rem;
+}
