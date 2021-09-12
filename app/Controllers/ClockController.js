@@ -9,7 +9,7 @@ function _startClock() {
         if (hrs == 0) {
             hrs = 12
         } else if (hrs >= 12) {
-            hrs = hrs - 12;
+            hrs = hrs - 0;
             period = "PM";
         }
         hrs = hrs < 10 ? "0" + hrs : hrs;

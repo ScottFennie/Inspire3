@@ -17,7 +17,6 @@ function _drawUserInput() {
         document.getElementById("namezone").innerHTML = /*html*/ `
         <h2>&nbsp${ProxyState.currentuser}</h2>`
     }
-
 }
 
 export class UserController {
@@ -25,6 +24,7 @@ export class UserController {
     constructor() {
         _drawUserInput()
         ProxyState.on('currentuser', _drawUserInput)
+        console.log("yee yee", ProxyState.currentuser)
     }
 
     createAUser() {
