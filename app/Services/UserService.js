@@ -32,6 +32,17 @@ class UserService {
         ProxyState.todos = res.data.map(t => new TodoItem(t))
         console.log("not idiot", ProxyState.todos)
     }
+
+    async getCompleted(todoId) {
+
+        const curtodo = ProxyState.todos.find(t => t.id === todoId)
+
+        curtodo.completed = !curtodo.completed
+        await todoApi.put(`${ProxyState.currentuser}/todos/${todoId}`, curtodo)
+
+        console.log("its clicked")
+
+    }
 }
 
 export const userService = new UserService

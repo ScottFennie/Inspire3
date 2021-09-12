@@ -72,5 +72,10 @@ export class UserController {
         form.reset()
 
     }
+    async getCompleted(todoId) {
+
+        await userService.getCompleted(todoId)
+        _drawTodo()
+    }
 
 }
