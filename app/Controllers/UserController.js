@@ -12,10 +12,13 @@ function _drawUserInput() {
             </div>
         </form>
         `
+
+        document.getElementById("hid").classList.add("hidden")
     } else {
 
         document.getElementById("namezone").innerHTML = /*html*/ `
         <h2>&nbsp${ProxyState.currentuser}</h2>`
+        document.getElementById("hid").classList.remove("hidden")
     }
 }
 
