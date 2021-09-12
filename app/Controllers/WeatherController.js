@@ -12,7 +12,7 @@ function _tempConvert(temp) {
     let newtemp = Math.floor(((temp - 273.15) * 1.8) + 32)
     ProxyState.weather.temp = newtemp
     ProxyState.weather = ProxyState.weather
-    console.log(ProxyState.weather)
+
 
 
 
@@ -42,7 +42,6 @@ export class WeatherController {
             ProxyState.weather = ProxyState.weather
 
             let far = ProxyState.weather.temp
-
             let cel = Math.round(((far - 32) * 5) / 9)
 
             ProxyState.weather.temp = cel
@@ -54,7 +53,6 @@ export class WeatherController {
             ProxyState.weather = ProxyState.weather
 
             let cel = ProxyState.weather.temp
-
             let far = Math.round((cel * 1.8) + 32)
 
             ProxyState.weather.temp = far
