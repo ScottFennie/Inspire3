@@ -16,7 +16,7 @@ class BackgroundService {
     async getBackgroundImage() {
         let res = await bgImageApi.get('images')
 
-        ProxyState.bgimages = res.data.largeImgUrl
+        ProxyState.bgimages = new BgImage(res.data)
 
     }
 

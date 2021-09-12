@@ -1,9 +1,12 @@
 export class Weather {
 
     constructor(weatherData) {
-        this.main = weatherData.main
-        this.icon = weatherData.icon
-        this.temp = weatherData.temp
+        this.icon = weatherData.weather.icon
+        this.base = weatherData.base
+        this.temp = weatherData.main.temp
+        this.type = weatherData.type || 0
+        this.name = weatherData.name
+        this.main = weatherData.weather.main
 
     }
 
@@ -11,7 +14,7 @@ export class Weather {
 
         return /*html*/ `
         <h3 class="pt-3">${this.temp}</h3>
-        <h6>${this.main}</h6>
+        <h6>${this.name}</h6>
         `
     }
 }
