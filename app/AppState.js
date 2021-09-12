@@ -12,6 +12,8 @@ class AppState extends EventEmitter {
     quote = []
 
     currentuser = ""
+
+    todos = []
 }
 
 export const ProxyState = new Proxy(new AppState(), {

@@ -48,9 +48,9 @@
             <div class="row text-white pt-5">
                 <div class="col-12 d-flex justify-content-center align-items-center flex-column">
                     <h4 class="pt-0">What are your goals for today?</h4>
-                    <form>
+                    <form onsubmit="app.userController.createTodo()">
                         <div class="mb-3 pt-2">
-                            <input type="text" class="inputzone" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input type="text" class="inputzone" id="description" aria-describedby="emailHelp">
                         </div>
                     </form>
                 </div>
@@ -66,16 +66,8 @@
                     <div class="card glassy text-light mb-3 shadow" style="max-width: 18rem;">
                         <div class="card-header text-center glassy2">Todo List</div>
                         <div class="card-body glassy2">
-                            <ul class="list-group text-white">
-                                <li class="list-group-item glassy2">
-                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="..."> First checkbox
-                                </li>
-                                <li class="list-group-item glassy2">
-                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="..."> Second checkbox
-                                </li>
-                                <li class="list-group-item glassy2">
-                                    <input class="form-check-input me-1" type="checkbox" value="" aria-label="..."> Third checkbox
-                                </li>
+                            <ul class="list-group text-white" id="todo">
+
                             </ul>
                         </div>
                     </div>

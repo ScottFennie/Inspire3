@@ -38,4 +38,19 @@ export class UserController {
         form.reset()
 
     }
+
+    createTodo() {
+
+        event.preventDefault()
+
+        let form = event.target
+
+        let todo = {
+            description: form.description.value
+        }
+
+        userService.createATodo(todo)
+        form.reset()
+
+    }
 }
