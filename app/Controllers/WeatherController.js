@@ -43,7 +43,7 @@ export class WeatherController {
 
             let far = ProxyState.weather.temp
 
-            let cel = Math.floor(((far - 32) * 5) / 9)
+            let cel = Math.round(((far - 32) * 5) / 9)
 
             ProxyState.weather.temp = cel
             ProxyState.weather = ProxyState.weather
@@ -55,13 +55,10 @@ export class WeatherController {
 
             let cel = ProxyState.weather.temp
 
-            let far = Math.floor((cel * 1.8) + 32)
+            let far = Math.round((cel * 1.8) + 32)
 
             ProxyState.weather.temp = far
             ProxyState.weather = ProxyState.weather
-
-
-
         }
 
     }

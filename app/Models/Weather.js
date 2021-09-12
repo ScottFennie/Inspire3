@@ -13,7 +13,7 @@ export class Weather {
     get Template() {
 
         return /*html*/ `
-        <h3 class="pt-3 selectable" onclick="app.weatherController.tempConvert()">${this.temp}</h3>
+        <h3 class="pt-3 selectable">${this.temp}</h3>
         <h6>${this.name}</h6>
         `
     }
