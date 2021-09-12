@@ -19,12 +19,19 @@ function _drawUserInput() {
     }
 }
 
+function _drawTodo() {
+
+    let template = ""
+    ProxyState.todos.forEach(t => template += t.Template)
+    document.getElementById("todo").innerHTML = template
+}
+
 export class UserController {
 
     constructor() {
         _drawUserInput()
         ProxyState.on('currentuser', _drawUserInput)
-        console.log("yee yee", ProxyState.currentuser)
+        ProxyState.on('todos', _drawTodo)
     }
 
     createAUser() {
